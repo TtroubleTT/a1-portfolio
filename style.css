@@ -140,6 +140,15 @@ main {
 }
 
 
+.video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto 0;
+    border-radius: 8px;
+}
+
 h1, h2, h3 {
     background: linear-gradient(270deg, #2E4FC6, #ED4182);
     background-size: 200% 200%;
