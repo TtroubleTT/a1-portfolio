@@ -18,8 +18,22 @@ body {
 
 .navigation {
     gap: 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
+
+.navigation .nav-link {
+    color: #D3D3D3;
+    transition: color 0.2s ease;
+}
+
+.navigation .nav-link:hover {
+    color: #A9A9A9;
+}
+
+.navigation .nav-active {
+    color: white;
+}
+
 
 h1 {
     background: linear-gradient(270deg, #2E4FC6, #ED4182);
