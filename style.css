@@ -22,6 +22,30 @@ main {
             #310433 100%);
 }
 
+.scpsl-banner {
+    background-image: url("images/scpsl_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.banner-title {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
 .top-bar {
     display: flex;
     flex-direction: column;
@@ -139,6 +163,15 @@ main {
     text-align: center;
 }
 
+.subpage-headers {
+    margin: 0 0 5px;
+    text-align: center;
+}
+
+.secondary-subpage-headers {
+    margin: 0;
+    text-align: center;
+}
 
 .video {
     display: block;
