@@ -5,6 +5,13 @@ body {
             #141414 0%,
             #141414 35%,
             #292929 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .purple-black-gradient {
@@ -42,6 +49,11 @@ body {
 .info-container {
     display: flex;
     justify-content: space-between;
+}
+
+.page-container {
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 .about-box {
