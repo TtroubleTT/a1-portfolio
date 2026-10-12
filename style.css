@@ -239,6 +239,7 @@ main {
 h1, h2, h3, h4 {
     background: linear-gradient(270deg, #2E4FC6, #ED4182);
     background-size: 200% 200%;
+    color: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient-fade 6s ease infinite;
@@ -253,6 +254,7 @@ h1, h2, h3, h4 {
 .name {
     background: linear-gradient(270deg, #2E4FC6, #ED4182);
     background-size: 200% 200%;
+    color: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient-fade 6s ease infinite;
