@@ -38,6 +38,23 @@ main {
     text-align: center;
 }
 
+.chaos-theory-banner {
+    background-image: url("images/ChaosTheoryBanner.png");
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+    text-align: center;
+}
+
 .content-box {
     padding: 20px;
     background: rgba(0, 0, 0, 0.75);
