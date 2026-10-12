@@ -92,11 +92,6 @@ main {
     justify-content: space-between;
 }
 
-.page-container {
-    padding-left: 90px;
-    padding-right: 90px;
-}
-
 .about-box {
     background-color: #383838;
     color: white;
