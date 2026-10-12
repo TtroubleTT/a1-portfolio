@@ -54,6 +54,11 @@ body {
     flex: 1;
     text-align: left;
     margin-top: 50px;
+    transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-8px) scale(1.02);
 }
 
 .about-title-box {
