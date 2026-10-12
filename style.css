@@ -1,6 +1,10 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: grey;
+    background: linear-gradient(
+            to right,
+            #141414 0%,
+            #141414 35%,
+            #292929 100%);
 }
 
 .purple-black-gradient {
