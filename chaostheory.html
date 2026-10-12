@@ -207,31 +207,73 @@ EMAIL: clarktm1@uci.edu
             </section>
 
 
-            <h1 class="floating-headers">Contributed Updates</h1>
+            <h1 class="floating-headers">Important Updates</h1>
             <section class="col-md-12 col-lg-6">
                 <section class="about-box">
                     <div class="about-title">
-                        <h2>14.0 Heavy Duty</h2>
+                        <h2>Mimicry Rewrite</h2>
                         <div class="title-line"></div>
                     </div>
                     <p>
-                        The 14.0 Heavy Duty update was the first update I joined the team on. I joined near the end
-                        of the development cycle, so I mainly worked on a lot of bug fixes. I also implemented 10 new
-                        steam achievements for the game and worked on a lot of different environment interactions
-                        especially having to do with the SCP-079 cameras.
+                        The 12.0 Mimicry update in early 2023 was a game update early in the servers career when we were using old plugins
+                        of another developer. This update thoroughly broke every servers plugins that everyone had to do
+                        a mass rewrite of their plugins. At this time we didn't really have funding and back then I didn't
+                        know how to code. Faced with my server going down the drain I proceeded in the span of two weeks
+                        pulling 12-hour days I learned how to code plugins. This led to the first rewrite of our plugins
+                        that also added some new features.
+                    </p>
+                </section>
+            </section>
+
+            <section class="col-md-12 col-lg-6">
+                <section class="about-box">
+                    <div class="about-title">
+                        <h2>Lab API Rewrite</h2>
+                        <div class="title-line"></div>
+                    </div>
+                    <p>
+                        Since our original rewrite was done when my team of developers didn't really know how to make
+                        plugins well it left us with a lot of technical debt. A little over a year ago Northwood released
+                        a basegame modding API called LAB API and since we were using a 3rd party modding API that had
+                        a lot of faults we decided we would move to LAB API and in the process rewrite all of our plugins
+                        from complete scratch. This was a massive undertaking we completely rewrote our role, item, ability,
+                        supporter, and spawning apis (and much more). Along with having to rewrite all the systems I also
+                        rewrote over 200 custom classes and 100 custom items. During this rewrite we made sure to design
+                        for expandability and maintainability and purged all uses of MEC (Call Delays and Coroutines) which
+                        were bad practice. We also enforced a very strict code style and public methods documenting with
+                        analyzers along with all code (even my own) having to go through comprehensive code reviews before
+                        getting merged. It wasn't just a rewrite though, we also added a bunch of reworks and QOL features
+                        players wanted and there was over 60 pages of patchnotes.This update took a year to complete,
+                        and we only finished it August 2026, but it is one of my most proud feats.
+                    </p>
+                </section>
+            </section>
+
+            <section class="col-md-12 col-lg-6">
+                <section class="about-box">
+                    <div class="about-title">
+                        <h2>Map API Update</h2>
+                        <div class="title-line"></div>
+                    </div>
+                    <p>
+                        SCPSL is very limited with what we can do with models. We can only make stuff out of primitive
+                        shapes. A popular public plugin people use is called Map Editor Reborn which lets you create
+                        maps out of primitives in unity and then export it as a json that is then used by the plugin
+                        to recreate the map in game. The spawning system in MER though doesn't have a lot of features
+                        so we made our own Map API that used MER as a map api but handled spawning itself. This way we
+                        were able to add rotating maps and random room variations that MER couldn't do on its own. This
+                        added an element of replayability that other servers that had custom maps didn't have.
                     </p>
 
-                    <img src="images/achievements.png" alt="Showcase of Achievements Taylor implemented in SCPSL.">
-
-                    <video class="video" controls  aria-label="14.0 Heavy Duty Trailer">
-                        <source src="videos/HeavyDutyTrailer.mp4" type="video/mp4">
+                    <video class="video" controls  aria-label="Trailer of a plugin update I worked on for Chaos Theory.">>
+                        <source src="videos/MapApiTrailer.mp4" type="video/mp4">
 
                         Sorry, your browser doesn't support HTML5 video.
-                        You can <a href="videos/HeavyDutyTrailer.mp4">download the video</a>
+                        You can <a href="videos/MapApiTrailer.mp4">download the video</a>
                         instead.
                     </video>
 
-                    <a href="https://youtu.be/aLI9t8GYOzk?si=n07PPAjN-W9V84Wl" target="_blank" class="btn more-info-btn">
+                    <a href="https://www.youtube.com/watch?v=EFz2POa_9aY" target="_blank" class="btn more-info-btn">
                         Full Trailer
                     </a>
                 </section>
@@ -240,94 +282,18 @@ EMAIL: clarktm1@uci.edu
             <section class="col-md-12 col-lg-6">
                 <section class="about-box">
                     <div class="about-title">
-                        <h2>14.1 Tooth And Nail</h2>
+                        <h2>Supporter Perks Implementation</h2>
                         <div class="title-line"></div>
                     </div>
                     <p>
-                        The 14.1 Tooth And Nail update was the first update that I was there for the entire development cycle.
-                        I worked a lot in supporting developers in the major additions that were SCP-127, and the new keycards.
-                        One of the main things I implemented was the SCP Opt out setting that lets players choose to not play
-                        as an SCP unless there is nobody else who can. I made sure to implement it in a way that wouldn't softlock
-                        lobbies without an SCP and in a way that wasn't abusable by players to try to game the system to get SCP.
+                        In order to make the server self-sustaining we had to implement supporter perks. Over time, we
+                        were able to make 20 perks over all the tiers that has managed to bring in enough money every
+                        month to be self-sustaining and turn a profit. Most of the perks used to be commands but with
+                        the Lab API rewrite I added them into a moddable settings page so they could use basic UI elements
+                        to use their perks.
                     </p>
 
-                    <img src="images/OptOutSetting.png" alt="The SCP Opt Out setting.">
-                    <br>
-                    <img src="images/InGameOptOut.png" alt="The SCP Opt Out in the waiting for players menu.">
-
-                    <video class="video" controls  aria-label="14.1 Tooth And Nail Trailer">
-                        <source src="videos/ToothAndNailTrailer.mp4" type="video/mp4">
-
-                        Sorry, your browser doesn't support HTML5 video.
-                        You can <a href="videos/ToothAndNailTrailer.mp4">download the video</a>
-                        instead.
-                    </video>
-
-                    <a href="https://www.youtube.com/watch?v=jAow1A6c5iw" target="_blank" class="btn more-info-btn">
-                        Full Trailer
-                    </a>
-                </section>
-            </section>
-
-            <section class="col-md-12 col-lg-6">
-                <section class="about-box">
-                    <div class="about-title">
-                        <h2>14.2 Songs Of Ash</h2>
-                        <div class="title-line"></div>
-                    </div>
-                    <p>
-                        The 14.2 Songs of Ash update featured some systems changes done by my. First was a refractor of the
-                        item spawning system to give Game Design better control of what items can spawn, their groupings,
-                        and the chances that they can spawn. I also implemented Counter Miniwaves which was an extension of
-                        the Miniwave feature that when a wave failed to meat requirements it would spawn a counter wave.
-                        I had to make sure the information was properly displayed in the UI and I made it easily updatable
-                        for potential visual indicators that Game Design may want later.
-                    </p>
-
-                    <img src="images/SpawningUI.png" alt="The spawning UI.">
-
-                    <video class="video" controls  aria-label="14.2 Songs Of Ash Trailer">
-                        <source src="videos/SongsOfAshTrailer.mp4" type="video/mp4">
-
-                        Sorry, your browser doesn't support HTML5 video.
-                        You can <a href="videos/SongsOfAshTrailer.mp4">download the video</a>
-                        instead.
-                    </video>
-
-                    <a href="https://youtu.be/UJ3JZ_qkdPk?si=FWY4qtuZI3A_daVr" target="_blank" class="btn more-info-btn">
-                        Full Trailer
-                    </a>
-                </section>
-            </section>
-
-            <section class="col-md-12 col-lg-6">
-                <section class="about-box">
-                    <div class="about-title">
-                        <h2>15.0 Megapatch III</h2>
-                        <div class="title-line"></div>
-                    </div>
-                    <p>
-                        The 15.0 Megapatch III update is the first major update I have been a part of for the full cycle.
-                        That means I was given a major task for this update but since the update is unreleased and my part
-                        of the update is not public yet. I can't share specifics about it. However, what I can say about my
-                        task is it required a lot of collaboration as I teamed up with a programmer friend to implement it
-                        while also having to heavily work with Game Design and the UI/UX team. During the set-up stage
-                        we had to break the Game Design document into multiple different tasks that we made a task board for.
-                        The system we designed we made specifically with the Game Designers in mind and spent a lot of time
-                        making sure it be easy for Game Designers to add onto without needing to add any / limited amount of code.
-                    </p>
-
-                    <video class="video" controls  aria-label="15.0 Megapatch III Trailer">
-                        <source src="videos/MegapatchIIITrailer.mp4" type="video/mp4">
-
-                        Sorry, your browser doesn't support HTML5 video.
-                        You can <a href="videos/MegapatchIIITrailer.mp4">download the video</a>
-                        instead.
-                    </video>
-
-                    <a href="https://youtu.be/OaZKmlEB6w8?si=xl-ljCcSuPhFt-HS" target="_blank" class="btn more-info-btn">
-                        Full Trailer
-                    </a>
+                    <img src="images/SupporterSettings.png" alt="Showcase of some supporter settings.">
                 </section>
             </section>
 
