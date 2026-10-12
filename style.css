@@ -61,14 +61,38 @@ body {
     transform: translateY(-8px) scale(1.02);
 }
 
-.about-title-box {
-    background-color: #292929;
-    padding: 5px 25px;
-    border-radius: 10px;
+.about-title {
     margin-bottom: 20px;
-    width: fit-content;
 }
 
+.about-title h2 {
+    margin-bottom: 8px;
+}
+
+.title-line {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #2E4FC6, #ED4182);
+}
+
+.connection-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin: 0 0 25px 0;
+}
+
+.connection-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.connection-item p {
+    margin: 0;
+}
 
 h1, h2 {
     background: linear-gradient(270deg, #2E4FC6, #ED4182);
