@@ -75,6 +75,10 @@ body {
     background: linear-gradient(to right, #2E4FC6, #ED4182);
 }
 
+.github-icon {
+    filter: invert(1);
+}
+
 .connection-item {
     display: flex;
     align-items: center;
