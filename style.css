@@ -149,6 +149,29 @@ main {
     border-radius: 8px;
 }
 
+
+.more-info-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+
+    background: linear-gradient(90deg, #2E4FC6, #ED4182);
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.more-info-btn:hover {
+    color: white;
+    opacity: 0.85;
+    transform: translateY(-3px);
+}
+
+
 h1, h2, h3 {
     background: linear-gradient(270deg, #2E4FC6, #ED4182);
     background-size: 200% 200%;
