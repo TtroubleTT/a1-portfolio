@@ -39,8 +39,33 @@ body {
     color: white;
 }
 
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 
-h1 {
+.about-box {
+    background-color: #383838;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.7;
+    flex: 1;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.about-title-box {
+    background-color: #292929;
+    padding: 5px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+
+h1, h2 {
     background: linear-gradient(270deg, #2E4FC6, #ED4182);
     background-size: 200% 200%;
     -webkit-background-clip: text;
