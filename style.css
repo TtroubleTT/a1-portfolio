@@ -38,7 +38,7 @@ main {
     text-align: center;
 }
 
-.banner-title {
+.content-box {
     padding: 20px;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 12px;
@@ -114,7 +114,7 @@ main {
     background: linear-gradient(to right, #2E4FC6, #ED4182);
 }
 
-.github-icon {
+.invert-color {
     filter: invert(1);
 }
 
